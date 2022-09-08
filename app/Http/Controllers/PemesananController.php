@@ -19,15 +19,12 @@ class PemesananController extends Controller
     
     public function store(Request $request){
         $validatedData = $request->validate([
-            'namaguru' => 'required',
-            'matapelajaran' => 'required',
-            'materipelajaran' => 'required',
-            'jampelajaran' => 'required',
-            'absensi' => 'required',
-            'kelas' => 'required',
-            'jenispembelajaran' => 'required',
-            'linkpembelajaran' => 'required',
-            'keterangan' => 'required',
+            'nama' => 'required',
+            'no_telepon' => 'required',
+            'tipe' => 'required',
+            'tanggal_checkin' => 'required',
+            'tanggal_checkout' => 'required',
+            'aksi' => 'required',
         ]);
             return redirect(route('pemesanan'));
 

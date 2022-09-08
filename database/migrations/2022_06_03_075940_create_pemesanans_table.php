@@ -15,17 +15,14 @@ return new class extends Migration
     {
         Schema::create('pemesanans', function (Blueprint $table) {
             $table->id();
-            $table->string('namaguru');
-            $table->string('materipelajaran');
-            $table->string('matapelajaran');
-            $table->string('jampelajaran');
-            $table->string('absensi');
-            $table->string('kelas');
-            $table->string('jenispembelajaran');
-            $table->string('linkpembelajaran');
-            $table->string('dokumentasi');
-            $table->string('keterangan');
-            $table->timestamps();
+            $table->string('nama');
+            $table->string('no_telepon');
+            $table->string('tipe');
+            $table->date('tanggal_checkin');
+            $table->date('tanggal_checkout');
+            $table->string('aksi');
+            $table->timestamps();  
+
         });
     }
 

@@ -26,9 +26,9 @@
              @foreach ($data as $key => $row)
              <tr>
                 <th scope="row">{{ $key+1 }}</th>
-                <td>{{ $row->namaguru }}</td>
-                <td>{{ $row->materipelajaran }}</td>
-                <td>{{ $row->matapelajaran }}</td>
+                <td>{{ $row->nama }}</td>
+                <td>{{ $row->notelepon }}</td>
+                <td>{{ $row->tanggalcheck_in }}</td>
                 <td>{{ $row->jampelajaran }}</td>
                 <td>{{ $row->absensi }}</td>
                 <td>{{ $row->kelas }}</td>

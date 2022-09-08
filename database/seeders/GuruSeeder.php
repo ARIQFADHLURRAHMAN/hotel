@@ -1,0 +1,28 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class GuruSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('gurus')->insert([
+            'namaguru' => 'Agus Diana S.pd',
+            'nik' => '1356890857',
+            'matapelajaran' => 'Pemograman',
+            'username' =>  'Agus Diana',
+            'password' =>  'agusdiana345',
+            
+        ]);
+        
+    }
+ }
